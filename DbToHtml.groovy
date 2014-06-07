@@ -420,7 +420,7 @@ j(document).ready(function() {
       displayMatchCounts(numTables, numColumns);
     } else {
       j('.share').css('visibility', 'hidden');
-      hideMatchCounts();
+      displayMatchCounts(j('.table').size(), null);
       j('.table').show();
     }
   }
@@ -457,6 +457,8 @@ j(document).ready(function() {
       var queryFromUrl = match[1];
       j('#q').val(queryFromUrl);
       search(queryFromUrl);
+    } else {
+      displayMatchCounts(j('.table').size(), null);
     }
   }
   init();
