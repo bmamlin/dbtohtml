@@ -352,6 +352,7 @@ j(document).ready(function() {
     j('#q').val('');
     j('.share').css('visibility', 'hidden');
     j('.table').show();
+    displayMatchCounts(j('.table').size(), null);
   }
   function hideMatchCounts() {
     j('.match-counts').css('visibility', 'hidden');
