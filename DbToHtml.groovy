@@ -145,7 +145,7 @@ out.write('') // truncate file
 out << "<!DOCTYPE html>\n<html>\n"
 out << """<head>
 <title>$TITLE</title>
-<link href="FAVICON" rel="icon" type="image/x-icon" />
+<link href="$FAVICON" rel="icon" type="image/x-icon" />
 <style type="text/css">
 <!--
 body {
