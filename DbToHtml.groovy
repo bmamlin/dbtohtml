@@ -151,11 +151,14 @@ out << """<head>
 body {
     font-family: arial;
 }
-.form {
+.title, .form {
   display: table;
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
+}
+.title {
+  font-weight: bold;
 }
 #q {
   width: 300px;
@@ -275,6 +278,7 @@ out << """
 
 // Generate search form and help panel
 out << """
+<h1>$TITLE</h1>
 <div class="form">
   <input id="q" type="search" placeholder="search (or type 'help')" />
   <div class="share">
