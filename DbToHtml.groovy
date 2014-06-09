@@ -455,7 +455,7 @@ j(document).ready(function() {
   function init() {
     var match = /^.*?#(.+)\$/.exec(window.location.href);
     if (match) {
-      var queryFromUrl = match[1];
+      var queryFromUrl = decodeURIComponent(match[1]);
       j('#q').val(queryFromUrl);
       search(queryFromUrl);
     } else {
